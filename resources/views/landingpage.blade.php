@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PT MEGANTARA CIPTA BERSAUDARA - Construction Company Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Construction Company Website Template">
+    <meta name="description" content="Construction Company Website Template">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('assets/mcb/img/logo-removebg-preview.png') }}">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="{{ asset('assets/mcb/lib/flaticon/font/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/animate/animate.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/slick/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/slick/slick-theme.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/css/style.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+
+                    <!-- Kiri: Nama perusahaan -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="logo" style="display: center; align-items: center; min-height: 90px;">
+                            <a href="index.html" style="text-decoration: none; color: inherit; text-align: center;">
+                                <h4 style="margin: 0; line-height: 1.1; font-weight: 700; color: #0b1f3a;">
+                                    PT MEGANTARA CIPTA BERSAUDARA
+                                </h4>
+                                <small
+                                    style="text-align: center; display: block; margin-top: 2px; line-height: 1.1; color: #ffffff; font-weight: 600;">
+                                    Connecting Network
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Kanan: 2 item -->
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <div class="row">
+
+                            <!-- Item 1 -->
+                            <div class="col-6">
+                                <div class="top-bar-item" style="display: flex; align-items: center; min-height: 90px;">
+                                    <div class="top-bar-icon" style="margin-right: 14px;">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3 style="margin: 0 0 4px; font-size: 18px;">Opening Hour</h3>
+                                        <p style="margin: 0; font-size: 14px;">Mon - Fri, 08:00 - 17:00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="col-6">
+                                <div class="top-bar-item" style="display: flex; align-items: center; min-height: 90px;">
+                                    <div class="top-bar-icon" style="margin-right: 14px;">
+                                        <i class="flaticon-call"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3 style="margin: 0 0 4px; font-size: 18px;">Admin Call</h3>
+                                        <p style="margin: 0; font-size: 14px;">0213889170</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a href="index.html" class="navbar-brand" style="padding: 0; display: flex; align-items: center;">
+                        <img src="{{ asset('assets/mcb/img/logo/logo-removebg-preview.png') }}" alt="MCB Logo"
+                            style="height: 55px; width: auto; object-fit: contain;">
+                    </a> <button type=" button" class="navbar-toggler" data-toggle="collapse"
+                        data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+
+                            <!-- Logo di sebelah Home -->
+
+                            </a>
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Service</a>
+                            <a href="team.html" class="nav-item nav-link">Team</a>
+                            <a href="portfolio.html" class="nav-item nav-link">Project</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Blog Page</a>
+                                    <a href="single.html" class="dropdown-item">Single Page</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="ml-auto">
+                            <a class="btn" href="{{ route('login') }}">More Info</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Carousel Start -->
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ asset('assets/mcb/img/home/1.jpeg') }}" alt="Telecommunication Construction">
+                    <div class="carousel-caption">
+                        <!-- <p class="animated fadeInRight">Welcome to iConstruction</p> -->
+                        <h1 class="animated fadeInLeft">Reliable Construction for Telecommunication Infrastructure</h1>
+                        <a class="btn animated fadeInUp" href="#about">Learn More</a>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/mcb/img/home/2.jpg') }}" alt="Fiber Optic Construction">
+                    <div class="carousel-caption">
+                        <p class="animated fadeInRight">Real-Time Project Monitoring</p>
+                        <h1 class="animated fadeInLeft">Trusted Solutions for Fiber Optic Construction</h1>
+                        <a class="btn animated fadeInUp" href="#service">Our Services</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/mcb/img/home/3.jpg') }}" alt="Network Infrastructure">
+                    <div class="carousel-caption">
+                        <p class="animated fadeInRight">Integrated Project Data Management</p>
+                        <h1 class="animated fadeInLeft">Building Stronger Network Infrastructure</h1>
+                        <a class="btn animated fadeInUp" href="#contact">Contact Us</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Feature Start-->
+        <div class="feature wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="flaticon-worker"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Skilled Team</h3>
+                                <p>Experienced professionals in fiber optic and telecommunication projects.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="flaticon-building"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Quality Delivery</h3>
+                                <p>Reliable construction with high standards of quality and efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="flaticon-call"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Project Support</h3>
+                                <p>Responsive support to keep every project running smoothly.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Feature End-->
+
+        <div style="width: 100%; background: #fff; overflow: hidden; position: relative; padding: 20px 0;">
+            <div class="partner-track"
+                style="display: flex; align-items: center; width: max-content; animation: partnerScroll 20s linear infinite;">
+
+                <!-- SET 1 -->
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="{{ asset('assets/mcb/img/logo/Telkom_Indonesia_2013.svg.webp') }}" alt="Telkom Indonesia"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="{{ asset('assets/mcb/img/logo/fmi.png') }}" alt="FMI"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="{{ asset('assets/mcb/img/logo/xl-axiata-l-min.jpg') }}" alt="XL Axiata"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="{{ asset('assets/mcb/img/logo/Moratelindo.jpg') }}" alt="Moratelindo"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <!-- DUPLIKAT SET 1 supaya scroll mulus -->
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="{{ asset('assets/mcb/img/logo/Telkom_Indonesia_2013.svg.webp') }}" alt="Telkom Indonesia"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="{{ asset('assets/mcb/img/logo/fmi.png') }}" alt="FMI"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="{{ asset('assets/mcb/img/logo/xl-axiata-l-min.jpg') }}" alt="XL Axiata"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="{{ asset('assets/mcb/img/logo/Moratelindo.jpg') }}" alt="Moratelindo"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @keyframes partnerScroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        </style>
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img">
+                            <img src="{{ asset('assets/mcb/img/about.jpg') }}" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="section-header text-left">
+                            <p>Welcome to PT Megantara Cipta Bersaudara</p>
+                            <h2>What is MCB?</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                PT Megantara Cipta Bersaudara (MCB) adalah perusahaan berbadan hukum Perseroan Terbatas
+                                (PT) yang didirikan pada tahun 2024 dan bergerak di berbagai sektor usaha strategis.
+                                Perusahaan ini menjalankan kegiatan usaha di bidang instalasi listrik, instalasi
+                                telekomunikasi, perdagangan peralatan telekomunikasi, layanan telekomunikasi, jasa
+                                konsumsi, serta penyelenggaraan acara khusus (special event). Dengan cakupan usaha yang
+                                luas, MCB berkomitmen untuk menjadi perusahaan yang adaptif, profesional, dan
+                                berkelanjutan dalam memberikan layanan berkualitas serta solusi inovatif bagi klien dan
+                                mitra kerja.
+
+                            </p>
+                            <a class="btn" href="about.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Fact Start -->
+        <div class="fact">
+            <div class="container-fluid">
+                <div class="row counters">
+                    <div class="col-md-6 fact-left wow slideInLeft">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="fact-icon">
+                                    <i class="flaticon-worker"></i>
+                                </div>
+                                <div class="fact-text">
+                                    <h2 data-toggle="counter-up">109</h2>
+                                    <p>Expert Workers</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="fact-icon">
+                                    <i class="flaticon-building"></i>
+                                </div>
+                                <div class="fact-text">
+                                    <h2 data-toggle="counter-up">485</h2>
+                                    <p>Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fact-right wow slideInRight">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="fact-icon">
+                                    <i class="flaticon-address"></i>
+                                </div>
+                                <div class="fact-text">
+                                    <h2 data-toggle="counter-up">789</h2>
+                                    <p>Completed Projects</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="fact-icon">
+                                    <i class="flaticon-crane"></i>
+                                </div>
+                                <div class="fact-text">
+                                    <h2 data-toggle="counter-up">890</h2>
+                                    <p>Running Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact End -->
+
+        <!-- Service Start -->
+        <div class="service">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Our Services</p>
+                    <h2>We Provide Services</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="{{ asset('assets/mcb/img/home/instalasi-listrik.jpg') }}"
+                                    alt="Layanan Instalasi">
+                                <div class="service-overlay">
+                                    <p>
+                                        Kami menyediakan layanan instalasi profesional untuk berbagai kebutuhan proyek,
+                                        mulai dari pemasangan perangkat, jaringan, hingga dukungan teknis lapangan
+                                        dengan standar kerja yang rapi, aman, dan tepat waktu.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-text">
+                                <h3>Instalasi</h3>
+                                <a class="btn" href="{{ asset('assets/mcb/img/home/instalasi-listrik.jpg') }}"
+                                    data-lightbox="service">+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="{{ asset('assets/mcb/img/home/telekomunikasi.jpg') }}"
+                                    alt="Layanan Telekomunikasi">
+                                <div class="service-overlay">
+                                    <p>
+                                        Kami melayani kebutuhan telekomunikasi, termasuk pembangunan, pemasangan,
+                                        pemeliharaan, dan dukungan infrastruktur jaringan untuk menunjang konektivitas
+                                        yang stabil, efisien, dan berkelanjutan.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-text">
+                                <h3>Telekomunikasi</h3>
+                                <a class="btn" href="{{ asset('assets/mcb/img/home/telekomunikasi.jpg') }}"
+                                    data-lightbox="service">+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="{{ asset('assets/mcb/img/home/perdagangan.jpg') }}" alt="Perdagangan">
+                                <div class="service-overlay">
+                                    <p>
+                                        Kami menjalankan kegiatan perdagangan barang dan jasa untuk mendukung kebutuhan
+                                        operasional perusahaan, proyek, maupun mitra kerja dengan mengutamakan kualitas,
+                                        kepercayaan, dan ketepatan pengiriman.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-text">
+                                <h3>Perdagangan</h3>
+                                <a class="btn" href="{{ asset('assets/mcb/img/home/perdagangan.jpg') }}"
+                                    data-lightbox="service">+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="{{ asset('assets/mcb/img/home/event.jpg') }}" alt="Layanan Event">
+                                <div class="service-overlay">
+                                    <p>
+                                        Kami menyediakan layanan event untuk kebutuhan perusahaan, komunitas, maupun
+                                        kegiatan promosi, mulai dari perencanaan, pengelolaan teknis, koordinasi
+                                        pelaksanaan, hingga dukungan operasional acara.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-text">
+                                <h3>Event</h3>
+                                <a class="btn" href="{{ asset('assets/mcb/img/home/event.jpg') }}"
+                                    data-lightbox="service">+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="{{ asset('assets/mcb/img/home/konsumsi.jpg') }}" alt="Layanan Konsumsi">
+                                <div class="service-overlay">
+                                    <p>
+                                        Kami juga menyediakan layanan konsumsi untuk berbagai kebutuhan acara, proyek,
+                                        maupun kegiatan operasional dengan memperhatikan kualitas, kebersihan, ketepatan
+                                        penyajian, dan kepuasan pelanggan.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-text">
+                                <h3>Konsumsi</h3>
+                                <a class="btn" href="{{ asset('assets/mcb/img/home/konsumsi.jpg') }}"
+                                    data-lightbox="service">+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            /* Samakan tinggi kolom service */
+            .service .row>[class*="col-"] {
+                display: flex;
+                margin-bottom: 30px;
+            }
+
+            /* Card full tinggi */
+            .service .service-item {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+            }
+
+            /* Samakan tinggi area gambar */
+            .service .service-img {
+                position: relative;
+                width: 100%;
+                height: 260px;
+                /* bisa ubah 240 / 260 / 280 sesuai kebutuhan */
+                overflow: hidden;
+            }
+
+            /* Samakan ukuran gambar */
+            .service .service-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* gambar tetap penuh dan rapi */
+                display: block;
+            }
+        </style>
+        <!-- Service End -->
+
+        <!-- map indonesia start -->
+        <section style="background: #0f0f0f; padding: 80px 0;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <h5 style="color: #ff7a00; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">
+                        Project Coverage
+                    </h5>
+                    <h2 style="color: #fff; font-size: 42px; font-weight: 700; margin: 0;">
+                        Our Nationwide Deployment Map
+                    </h2>
+                </div>
+
+                <div
+                    style="background: #161616; border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <button class="filter-btn active" data-year="all">All</button>
+                            <button class="filter-btn" data-year="2026">2026</button>
+                            <button class="filter-btn" data-year="2025">2025</button>
+                            <button class="filter-btn" data-year="2024">2024</button>
+                        </div>
+
+                        <div style="color: #fff; font-size: 16px;">
+                            Total Projects: <strong id="totalProjects">0</strong> City
+                        </div>
+                    </div>
+
+                    <div id="projectMap" style="width: 100%; height: 550px; border-radius: 16px; overflow: hidden;">
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .filter-btn {
+                    background: #252525;
+                    color: #fff;
+                    border: 1px solid #333;
+                    padding: 10px 18px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-size: 14px;
+                }
+
+                .filter-btn:hover,
+                .filter-btn.active {
+                    background: #ff7a00;
+                    border-color: #ff7a00;
+                    color: #fff;
+                }
+
+                .leaflet-popup-content-wrapper {
+                    border-radius: 12px;
+                }
+
+                .leaflet-popup-content {
+                    margin: 12px 14px;
+                    font-family: Arial, sans-serif;
+                }
+            </style>
+
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+            <script>
+                const projects = [{
+                    nama: "Project Malang",
+                    kota: "Malang",
+                    lat: -7.9666,
+                    lng: 112.6326,
+                    color: "#ff6b6b"
+                },
+                {
+                    nama: "Project Nganjuk",
+                    kota: "Nganjuk",
+                    lat: -7.6051,
+                    lng: 111.9035,
+                    color: "#4ecdc4"
+                },
+                {
+                    nama: "Project Pemalang",
+                    kota: "Pemalang",
+                    lat: -6.8915,
+                    lng: 109.3826,
+                    color: "#ffd93d"
+                },
+                {
+                    nama: "Project Purwakarta",
+                    kota: "Purwakarta",
+                    lat: -6.5569,
+                    lng: 107.4438,
+                    color: "#5f27cd"
+                },
+                {
+                    nama: "Project Kudus",
+                    kota: "Kudus",
+                    lat: -6.8048,
+                    lng: 110.8405,
+                    color: "#1dd1a1"
+                },
+                {
+                    nama: "Project Jepara",
+                    kota: "Jepara",
+                    lat: -6.5933,
+                    lng: 110.6680,
+                    color: "#ff9f43"
+                },
+                {
+                    nama: "Project Pati",
+                    kota: "Pati",
+                    lat: -6.7487,
+                    lng: 111.0379,
+                    color: "#54a0ff"
+                },
+                {
+                    nama: "Project Sukabumi",
+                    kota: "Sukabumi",
+                    lat: -6.9277,
+                    lng: 106.9297,
+                    color: "#ee5253"
+                },
+                {
+                    nama: "Project Cianjur",
+                    kota: "Cianjur",
+                    lat: -6.8173,
+                    lng: 107.1427,
+                    color: "#10ac84"
+                },
+                {
+                    nama: "Project Bekasi",
+                    kota: "Bekasi",
+                    lat: -6.2383,
+                    lng: 106.9756,
+                    color: "#f368e0"
+                },
+                {
+                    nama: "Project Cikarang",
+                    kota: "Cikarang",
+                    lat: -6.2615,
+                    lng: 107.1522,
+                    color: "#00d2d3"
+                },
+                {
+                    nama: "Project Banjarnegara",
+                    kota: "Banjarnegara",
+                    lat: -7.4020,
+                    lng: 109.6810,
+                    color: "#ff9ff3"
+                },
+                {
+                    nama: "Project Temanggung",
+                    kota: "Temanggung",
+                    lat: -7.3167,
+                    lng: 110.1667,
+                    color: "#48dbfb"
+                },
+                {
+                    nama: "Project Wonosobo",
+                    kota: "Wonosobo",
+                    lat: -7.3630,
+                    lng: 109.9000,
+                    color: "#feca57"
+                },
+                {
+                    nama: "Project Kebumen",
+                    kota: "Kebumen",
+                    lat: -7.6689,
+                    lng: 109.6531,
+                    color: "#5f6caf"
+                },
+                {
+                    nama: "Project Probolinggo",
+                    kota: "Probolinggo",
+                    lat: -7.7543,
+                    lng: 113.2159,
+                    color: "#ff7f50"
+                },
+                {
+                    nama: "Project Jember",
+                    kota: "Jember",
+                    lat: -8.1724,
+                    lng: 113.7000,
+                    color: "#6a5acd"
+                },
+                {
+                    nama: "Project Sulawesi",
+                    kota: "Makassar",
+                    lat: -5.1477,
+                    lng: 119.4327,
+                    color: "#20c997"
+                },
+                {
+                    nama: "Project Kediri",
+                    kota: "Kediri",
+                    lat: -7.8480,
+                    lng: 112.0178,
+                    color: "#ff8fab"
+                },
+                {
+                    nama: "Project Madiun",
+                    kota: "Madiun",
+                    lat: -7.6298,
+                    lng: 111.5239,
+                    color: "#2ec4b6"
+                },
+                {
+                    nama: "Project Blitar",
+                    kota: "Blitar",
+                    lat: -8.0955,
+                    lng: 112.1608,
+                    color: "#ffb703"
+                },
+                {
+                    nama: "Project Cirebon",
+                    kota: "Cirebon",
+                    lat: -6.7063,
+                    lng: 108.5570,
+                    color: "#8d99ae"
+                },
+                {
+                    nama: "Project Kediri",
+                    kota: "Kediri",
+                    lat: -7.8480,
+                    lng: 112.0178,
+                    color: "#ff8fab"
+                },
+                {
+                    nama: "Project Madiun",
+                    kota: "Madiun",
+                    lat: -7.6298,
+                    lng: 111.5239,
+                    color: "#2ec4b6"
+                },
+                {
+                    nama: "Project Blitar",
+                    kota: "Blitar",
+                    lat: -8.0955,
+                    lng: 112.1608,
+                    color: "#ffb703"
+                },
+                {
+                    nama: "Project Cirebon",
+                    kota: "Cirebon",
+                    lat: -6.7063,
+                    lng: 108.5570,
+                    color: "#8d99ae"
+                },
+                {
+                    nama: "Project Subang",
+                    kota: "Subang",
+                    lat: -6.5719,
+                    lng: 107.7605,
+                    color: "#8338ec"
+                },
+                {
+                    nama: "Project Purwakarta",
+                    kota: "Purwakarta",
+                    lat: -6.5569,
+                    lng: 107.4438,
+                    color: "#fb5607"
+                },
+                {
+                    nama: "Project Jakarta Barat",
+                    kota: "Jakarta Barat",
+                    lat: -6.1683,
+                    lng: 106.7588,
+                    color: "#e63946"
+                },
+                {
+                    nama: "Project Bogor",
+                    kota: "Bogor",
+                    lat: -6.5950,
+                    lng: 106.8167,
+                    color: "#06d6a0"
+                },
+                {
+                    nama: "Project Karawang",
+                    kota: "Karawang",
+                    lat: -6.3054,
+                    lng: 107.2961,
+                    color: "#3a86ff"
+                },
+                {
+                    nama: "Project Indramayu",
+                    kota: "Indramayu",
+                    lat: -6.3265,
+                    lng: 108.3207,
+                    color: "#ff006e"
+                },
+                {
+                    nama: "Project Indramayu",
+                    kota: "Indramayu",
+                    lat: -6.3265,
+                    lng: 108.3207,
+                    color: "#ff006e"
+                }
+                ];
+
+                // Inisialisasi map
+                const map = L.map('projectMap', {
+                    zoomControl: true,
+                    scrollWheelZoom: true
+                }).setView([-2.5, 118], 5);
+
+                // Dark tile
+                L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                    attribution: ''
+                }).addTo(map);
+
+                let markersLayer = L.layerGroup().addTo(map);
+
+                function renderMarkers() {
+                    markersLayer.clearLayers();
+
+                    projects.forEach(project => {
+                        const marker = L.circleMarker([project.lat, project.lng], {
+                            radius: 9,
+                            color: "#ffffff",
+                            weight: 2,
+                            fillColor: project.color,
+                            fillOpacity: 1
+                        });
+
+                        marker.bindPopup(`
+                            <div style="min-width:200px;">
+                                <h4 style="margin:0 0 8px; font-size:16px; font-weight:700; color:#0f172a;">
+                                    ${project.nama}
+                                </h4>
+                                <p style="margin:0; font-size:14px;">
+                                    <strong>Kota:</strong> ${project.kota}
+                                </p>
+                            </div>
+                        `);
+
+                        marker.addTo(markersLayer);
+                    });
+
+                    document.getElementById('totalProjects').textContent = projects.length;
+                }
+
+                renderMarkers();
+
+                // Filter button
+                const buttons = document.querySelectorAll('.filter-btn');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        buttons.forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+
+                        const year = this.getAttribute('data-year');
+                        renderMarkers(year);
+                    });
+                });
+            </script>
+        </section>
+        <!-- map indonesia end -->
+
+        <!-- Team Start -->
+        <style>
+            .team .row {
+                display: flex;
+                justify-content: center;
+            }
+
+            .team .team-item {
+                height: 100%;
+                text-align: center;
+            }
+
+            .team .team-img {
+                width: 100%;
+                height: 350px;
+                overflow: hidden;
+            }
+
+            .team .team-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        </style>
+
+        <div class="team">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Executive Management</p>
+                    <h2>Meet Our Executive Team</h2>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{{ asset('assets/mcb/img/diki34.png') }}" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Dicky Zulfi</h2>
+                                <p>President Director</p>
+                            </div>
+                            <div class="team-social">
+                                <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{{ asset('assets/mcb/img/sandy.png') }}" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Sandy Maulana</h2>
+                                <p>President Commissioner</p>
+                            </div>
+                            <div class="team-social">
+                                <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-contact">
+                            <h2>Office Contact</h2>
+                            <p><i class="fa fa-map-marker-alt"></i> Ruko Amara Residence No. A-15</p>
+                            <p><i class="fa fa-phone-alt"></i>0213889170</p>
+                            <p><i class="fa fa-envelope"></i>megantaracipta.b@gmail.com</p>
+                            <!-- <div class="footer-social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-link">
+                            <h2>Services Areas</h2>
+                            <a href="">Building Construction</a>
+                            <a href="">House Renovation</a>
+                            <a href="">Architecture Design</a>
+                            <a href="">Interior Design</a>
+                            <a href="">Painting</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-link">
+                            <h2>Useful Pages</h2>
+                            <a href="">About Us</a>
+                            <a href="">Contact Us</a>
+                            <a href="">Our Team</a>
+                            <a href="">Projects</a>
+                            <a href="">Testimonial</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="newsletter">
+                            <h2>Newsletter</h2>
+                            <p>
+                                Dapatkan informasi terbaru mengenai proyek, layanan, dan perkembangan PT Megantara Cipta
+                                Bersaudara melalui newsletter kami.
+                            </p>
+                            <div class="form">
+                                <input class="form-control" placeholder="Email here">
+                                <button class="btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-menu">
+                <div class="f-menu">
+                    <a href="">Terms of use</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">Help</a>
+                    <a href="">FQAs</a>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; <a href="#">PT. MEGANTARA CIPTA BERSAUDARA</a>, All Right Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <small>
+                            <p>Designed By <a href="https://htmlcodex.com">Mrupy's Group</a></p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="{{ asset('assets/mcb/lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/counterup/counterup.min.js') }}"></script>
+
+    <script src="{{ asset('assets/mcb/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/lightbox/js/lightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/slick/slick.min.js') }}"></script>
+
+    <script src="{{ asset('assets/mcb/js/main.js') }}"></script>
+    <!-- Template Javascript -->
+    <a href="https://wa.me/6281234567890?text=Halo%20PT%20Megantara%20Cipta%20Bersaudara,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda."
+        class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+
+        <style>
+            .whatsapp-float {
+                position: fixed;
+                left: 20px;
+                bottom: 20px;
+                width: 60px;
+                height: 60px;
+                background: #25D366;
+                color: #fff;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 60px;
+                font-size: 34px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
+                z-index: 9999;
+                transition: .3s;
+            }
+
+            .whatsapp-float:hover {
+                background: #20ba5a;
+                color: #fff;
+                text-decoration: none;
+                transform: scale(1.1);
+            }
+        </style>
+    </a>
+</body>
+
+</html>

@@ -23,15 +23,25 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->instance(LoginResponse::class, new class implements LoginResponse
-        {
+        // Redirect setelah login berdasarkan group user
+        $this->app->instance(LoginResponse::class, new class implements LoginResponse {
             public function toResponse($request)
             {
-                if (Auth::user() && Auth::user()->isAdmin) {
+                $user = Auth::user();
+
+                if ($user && ($user->group === 'admin' || $user->group === 'superadmin')) {
                     return redirect('/admin');
                 }
 
-                return redirect('/');
+                return redirect('/home');
+            }
+        });
+
+        // Redirect setelah register
+        $this->app->instance(RegisterResponse::class, new class implements RegisterResponse {
+            public function toResponse($request)
+            {
+                return redirect('/home');
             }
         });
     }
@@ -47,7 +57,9 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
 
         RateLimiter::for('login', function (Request $request) {
-            $throttleKey = Str::transliterate(Str::lower($request->input(Fortify::username())) . '|' . $request->ip());
+            $throttleKey = Str::transliterate(
+                Str::lower($request->input(Fortify::username())) . '|' . $request->ip()
+            );
 
             return Limit::perMinute(5)->by($throttleKey);
         });

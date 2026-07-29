@@ -1,0 +1,6 @@
+/.idea
+/nbproject
+/vendor
+/report
+.DS_Store
+.phpunit.result.cache

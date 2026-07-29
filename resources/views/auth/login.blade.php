@@ -13,13 +13,14 @@
         @endsession
 
         <form method="POST" action="{{ route('login') }}">
+
             @csrf
             <input type="hidden" id="device_token" name="device_token" value="">
 
             <div>
                 <x-label for="email" value="{{ __('Email or Phone') }}" />
-                <x-input id="email" class="mt-1 block w-full" type="text" name="email" :value="old('email')"
-                    required autofocus autocomplete="username" />
+                <x-input id="email" class="mt-1 block w-full" type="text" name="email" :value="old('email')" required
+                    autofocus autocomplete="username" />
             </div>
 
             <div class="mt-4">
@@ -50,7 +51,7 @@
 
         @pushOnce('scripts')
             <script>
-                (function() {
+                (function () {
                     let token = localStorage.getItem('device_token');
                     if (!token) {
                         token = crypto.randomUUID();
@@ -58,7 +59,7 @@
                     }
                     document.getElementById('device_token').value = token;
                 })
-                ();
+                    ();
             </script>
         @endPushOnce
 
