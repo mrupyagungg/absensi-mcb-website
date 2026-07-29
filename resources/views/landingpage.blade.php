@@ -4,33 +4,32 @@
 <head>
     <meta charset="utf-8">
     <title>PT MEGANTARA CIPTA BERSAUDARA - Construction Company Website</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Construction Company Website Template" name="keywords">
-    <meta content="Construction Company Website Template" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Construction Company Website Template">
+    <meta name="description" content="Construction Company Website Template">
 
     <!-- Favicon -->
-    <link href="img/logo/logo-removebg-preview.png" rel="icon">
-
+    <link rel="icon" type="image/png" href="{{ asset('assets/mcb/img/logo-removebg-preview.png') }}">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- CSS Libraries -->
+    <!-- CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/slick/slick.css" rel="stylesheet">
-    <link href="lib/slick/slick-theme.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/flaticon/font/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/animate/animate.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/slick/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/lib/slick/slick-theme.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/mcb/css/style.css') }}" rel="stylesheet">
 
-    <!-- link map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
 
 <body>
@@ -98,9 +97,9 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
                     <a href="index.html" class="navbar-brand" style="padding: 0; display: flex; align-items: center;">
-                        <img src="img/logo/logo-removebg-preview.png" alt="MCB Logo"
+                        <img src="{{ asset('assets/mcb/img/logo/logo-removebg-preview.png') }}" alt="MCB Logo"
                             style="height: 55px; width: auto; object-fit: contain;">
-                    </a> <button type="button" class="navbar-toggler" data-toggle="collapse"
+                    </a> <button type=" button" class="navbar-toggler" data-toggle="collapse"
                         data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -126,7 +125,7 @@
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="ml-auto">
-                            <a class="btn" href="#">More Info</a>
+                            <a class="btn" href="{{ route('login') }}">More Info</a>
                         </div>
                     </div>
                 </nav>
@@ -144,7 +143,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/home/1.jpeg" alt="Telecommunication Construction">
+                    <img src="{{ asset('assets/mcb/img/home/1.jpeg') }}" alt="Telecommunication Construction">
                     <div class="carousel-caption">
                         <!-- <p class="animated fadeInRight">Welcome to iConstruction</p> -->
                         <h1 class="animated fadeInLeft">Reliable Construction for Telecommunication Infrastructure</h1>
@@ -154,7 +153,7 @@
 
 
                 <div class="carousel-item">
-                    <img src="img/home/2.jpg" alt="Fiber Optic Construction">
+                    <img src="{{ asset('assets/mcb/img/home/2.jpg') }}" alt="Fiber Optic Construction">
                     <div class="carousel-caption">
                         <p class="animated fadeInRight">Real-Time Project Monitoring</p>
                         <h1 class="animated fadeInLeft">Trusted Solutions for Fiber Optic Construction</h1>
@@ -163,7 +162,7 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img src="img/home/3.jpg" alt="Network Infrastructure">
+                    <img src="{{ asset('assets/mcb/img/home/3.jpg') }}" alt="Network Infrastructure">
                     <div class="carousel-caption">
                         <p class="animated fadeInRight">Integrated Project Data Management</p>
                         <h1 class="animated fadeInLeft">Building Stronger Network Infrastructure</h1>
@@ -238,48 +237,50 @@
                 <!-- SET 1 -->
                 <div
                     style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-                    <img src="img/logo/Telkom_Indonesia_2013.svg.webp" alt="Telkom Indonesia"
+                    <img src="{{ asset('assets/mcb/img/logo/Telkom_Indonesia_2013.svg.webp') }}" alt="Telkom Indonesia"
                         style="max-height: 55px; width: auto; object-fit: contain;">
                 </div>
 
                 <div
                     style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-                    <img src="img/logo/fmi.png" alt="FMI" style="max-height: 55px; width: auto; object-fit: contain;">
-                </div>
-
-                <div
-                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-                    <img src="img/logo/xl-axiata-l-min.jpg" alt="XL Axiata"
+                    <img src="{{ asset('assets/mcb/img/logo/fmi.png') }}" alt="FMI"
                         style="max-height: 55px; width: auto; object-fit: contain;">
                 </div>
 
                 <div
                     style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-                    <img src="img/logo/Moratelindo.jpg" alt="Moratelindo"
+                    <img src="{{ asset('assets/mcb/img/logo/xl-axiata-l-min.jpg') }}" alt="XL Axiata"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="{{ asset('assets/mcb/img/logo/Moratelindo.jpg') }}" alt="Moratelindo"
                         style="max-height: 55px; width: auto; object-fit: contain;">
                 </div>
 
                 <!-- DUPLIKAT SET 1 supaya scroll mulus -->
                 <div
                     style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-                    <img src="img/logo/Telkom_Indonesia_2013.svg.webp" alt="Telkom Indonesia"
+                    <img src="{{ asset('assets/mcb/img/logo/Telkom_Indonesia_2013.svg.webp') }}" alt="Telkom Indonesia"
                         style="max-height: 55px; width: auto; object-fit: contain;">
                 </div>
 
                 <div
                     style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-                    <img src="img/logo/fmi.png" alt="FMI" style="max-height: 55px; width: auto; object-fit: contain;">
-                </div>
-
-                <div
-                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-                    <img src="img/logo/xl-axiata-l-min.jpg" alt="XL Axiata"
+                    <img src="{{ asset('assets/mcb/img/logo/fmi.png') }}" alt="FMI"
                         style="max-height: 55px; width: auto; object-fit: contain;">
                 </div>
 
                 <div
                     style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
-                    <img src="img/logo/Moratelindo.jpg" alt="Moratelindo"
+                    <img src="{{ asset('assets/mcb/img/logo/xl-axiata-l-min.jpg') }}" alt="XL Axiata"
+                        style="max-height: 55px; width: auto; object-fit: contain;">
+                </div>
+
+                <div
+                    style="flex: 0 0 auto; width: 180px; display: flex; justify-content: center; align-items: center; margin: 0 20px;">
+                    <img src="{{ asset('assets/mcb/img/logo/Moratelindo.jpg') }}" alt="Moratelindo"
                         style="max-height: 55px; width: auto; object-fit: contain;">
                 </div>
             </div>
@@ -303,7 +304,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-6">
                         <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
+                            <img src="{{ asset('assets/mcb/img/about.jpg') }}" alt="Image">
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-6">
@@ -396,7 +397,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/home/instalasi-listrik.jpg" alt="Layanan Instalasi">
+                                <img src="{{ asset('assets/mcb/img/home/instalasi-listrik.jpg') }}"
+                                    alt="Layanan Instalasi">
                                 <div class="service-overlay">
                                     <p>
                                         Kami menyediakan layanan instalasi profesional untuk berbagai kebutuhan proyek,
@@ -407,7 +409,8 @@
                             </div>
                             <div class="service-text">
                                 <h3>Instalasi</h3>
-                                <a class="btn" href="img/home/instalasi-listrik.jpg" data-lightbox="service">+</a>
+                                <a class="btn" href="{{ asset('assets/mcb/img/home/instalasi-listrik.jpg') }}"
+                                    data-lightbox="service">+</a>
                             </div>
                         </div>
                     </div>
@@ -415,7 +418,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/home/telekomunikasi.jpg" alt="Layanan Telekomunikasi">
+                                <img src="{{ asset('assets/mcb/img/home/telekomunikasi.jpg') }}"
+                                    alt="Layanan Telekomunikasi">
                                 <div class="service-overlay">
                                     <p>
                                         Kami melayani kebutuhan telekomunikasi, termasuk pembangunan, pemasangan,
@@ -426,7 +430,8 @@
                             </div>
                             <div class="service-text">
                                 <h3>Telekomunikasi</h3>
-                                <a class="btn" href="img/home/telekomunikasi.jpg" data-lightbox="service">+</a>
+                                <a class="btn" href="{{ asset('assets/mcb/img/home/telekomunikasi.jpg') }}"
+                                    data-lightbox="service">+</a>
                             </div>
                         </div>
                     </div>
@@ -434,7 +439,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/home/perdagangan.jpg" alt="Perdagangan">
+                                <img src="{{ asset('assets/mcb/img/home/perdagangan.jpg') }}" alt="Perdagangan">
                                 <div class="service-overlay">
                                     <p>
                                         Kami menjalankan kegiatan perdagangan barang dan jasa untuk mendukung kebutuhan
@@ -445,7 +450,8 @@
                             </div>
                             <div class="service-text">
                                 <h3>Perdagangan</h3>
-                                <a class="btn" href="img/home/perdagangan.jpg" data-lightbox="service">+</a>
+                                <a class="btn" href="{{ asset('assets/mcb/img/home/perdagangan.jpg') }}"
+                                    data-lightbox="service">+</a>
                             </div>
                         </div>
                     </div>
@@ -453,7 +459,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/home/event.jpg" alt="Layanan Event">
+                                <img src="{{ asset('assets/mcb/img/home/event.jpg') }}" alt="Layanan Event">
                                 <div class="service-overlay">
                                     <p>
                                         Kami menyediakan layanan event untuk kebutuhan perusahaan, komunitas, maupun
@@ -464,7 +470,8 @@
                             </div>
                             <div class="service-text">
                                 <h3>Event</h3>
-                                <a class="btn" href="img/home/event.jpg" data-lightbox="service">+</a>
+                                <a class="btn" href="{{ asset('assets/mcb/img/home/event.jpg') }}"
+                                    data-lightbox="service">+</a>
                             </div>
                         </div>
                     </div>
@@ -472,7 +479,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/home/konsumsi.jpg" alt="Layanan Konsumsi">
+                                <img src="{{ asset('assets/mcb/img/home/konsumsi.jpg') }}" alt="Layanan Konsumsi">
                                 <div class="service-overlay">
                                     <p>
                                         Kami juga menyediakan layanan konsumsi untuk berbagai kebutuhan acara, proyek,
@@ -483,7 +490,8 @@
                             </div>
                             <div class="service-text">
                                 <h3>Konsumsi</h3>
-                                <a class="btn" href="img/home/konsumsi.jpg" data-lightbox="service">+</a>
+                                <a class="btn" href="{{ asset('assets/mcb/img/home/konsumsi.jpg') }}"
+                                    data-lightbox="service">+</a>
                             </div>
                         </div>
                     </div>
@@ -592,40 +600,237 @@
             <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
             <script>
-                const projects = [
-                    { nama: "Project Malang", kota: "Malang", lat: -7.9666, lng: 112.6326, color: "#ff6b6b" },
-                    { nama: "Project Nganjuk", kota: "Nganjuk", lat: -7.6051, lng: 111.9035, color: "#4ecdc4" },
-                    { nama: "Project Pemalang", kota: "Pemalang", lat: -6.8915, lng: 109.3826, color: "#ffd93d" },
-                    { nama: "Project Purwakarta", kota: "Purwakarta", lat: -6.5569, lng: 107.4438, color: "#5f27cd" },
-                    { nama: "Project Kudus", kota: "Kudus", lat: -6.8048, lng: 110.8405, color: "#1dd1a1" },
-                    { nama: "Project Jepara", kota: "Jepara", lat: -6.5933, lng: 110.6680, color: "#ff9f43" },
-                    { nama: "Project Pati", kota: "Pati", lat: -6.7487, lng: 111.0379, color: "#54a0ff" },
-                    { nama: "Project Sukabumi", kota: "Sukabumi", lat: -6.9277, lng: 106.9297, color: "#ee5253" },
-                    { nama: "Project Cianjur", kota: "Cianjur", lat: -6.8173, lng: 107.1427, color: "#10ac84" },
-                    { nama: "Project Bekasi", kota: "Bekasi", lat: -6.2383, lng: 106.9756, color: "#f368e0" },
-                    { nama: "Project Cikarang", kota: "Cikarang", lat: -6.2615, lng: 107.1522, color: "#00d2d3" },
-                    { nama: "Project Banjarnegara", kota: "Banjarnegara", lat: -7.4020, lng: 109.6810, color: "#ff9ff3" },
-                    { nama: "Project Temanggung", kota: "Temanggung", lat: -7.3167, lng: 110.1667, color: "#48dbfb" },
-                    { nama: "Project Wonosobo", kota: "Wonosobo", lat: -7.3630, lng: 109.9000, color: "#feca57" },
-                    { nama: "Project Kebumen", kota: "Kebumen", lat: -7.6689, lng: 109.6531, color: "#5f6caf" },
-                    { nama: "Project Probolinggo", kota: "Probolinggo", lat: -7.7543, lng: 113.2159, color: "#ff7f50" },
-                    { nama: "Project Jember", kota: "Jember", lat: -8.1724, lng: 113.7000, color: "#6a5acd" },
-                    { nama: "Project Sulawesi", kota: "Makassar", lat: -5.1477, lng: 119.4327, color: "#20c997" },
-                    { nama: "Project Kediri", kota: "Kediri", lat: -7.8480, lng: 112.0178, color: "#ff8fab" },
-                    { nama: "Project Madiun", kota: "Madiun", lat: -7.6298, lng: 111.5239, color: "#2ec4b6" },
-                    { nama: "Project Blitar", kota: "Blitar", lat: -8.0955, lng: 112.1608, color: "#ffb703" },
-                    { nama: "Project Cirebon", kota: "Cirebon", lat: -6.7063, lng: 108.5570, color: "#8d99ae" },
-                    { nama: "Project Kediri", kota: "Kediri", lat: -7.8480, lng: 112.0178, color: "#ff8fab" },
-                    { nama: "Project Madiun", kota: "Madiun", lat: -7.6298, lng: 111.5239, color: "#2ec4b6" },
-                    { nama: "Project Blitar", kota: "Blitar", lat: -8.0955, lng: 112.1608, color: "#ffb703" },
-                    { nama: "Project Cirebon", kota: "Cirebon", lat: -6.7063, lng: 108.5570, color: "#8d99ae" },
-                    { nama: "Project Subang", kota: "Subang", lat: -6.5719, lng: 107.7605, color: "#8338ec" },
-                    { nama: "Project Purwakarta", kota: "Purwakarta", lat: -6.5569, lng: 107.4438, color: "#fb5607" },
-                    { nama: "Project Jakarta Barat", kota: "Jakarta Barat", lat: -6.1683, lng: 106.7588, color: "#e63946" },
-                    { nama: "Project Bogor", kota: "Bogor", lat: -6.5950, lng: 106.8167, color: "#06d6a0" },
-                    { nama: "Project Karawang", kota: "Karawang", lat: -6.3054, lng: 107.2961, color: "#3a86ff" },
-                    { nama: "Project Indramayu", kota: "Indramayu", lat: -6.3265, lng: 108.3207, color: "#ff006e" },
-                    { nama: "Project Indramayu", kota: "Indramayu", lat: -6.3265, lng: 108.3207, color: "#ff006e" }
+                const projects = [{
+                    nama: "Project Malang",
+                    kota: "Malang",
+                    lat: -7.9666,
+                    lng: 112.6326,
+                    color: "#ff6b6b"
+                },
+                {
+                    nama: "Project Nganjuk",
+                    kota: "Nganjuk",
+                    lat: -7.6051,
+                    lng: 111.9035,
+                    color: "#4ecdc4"
+                },
+                {
+                    nama: "Project Pemalang",
+                    kota: "Pemalang",
+                    lat: -6.8915,
+                    lng: 109.3826,
+                    color: "#ffd93d"
+                },
+                {
+                    nama: "Project Purwakarta",
+                    kota: "Purwakarta",
+                    lat: -6.5569,
+                    lng: 107.4438,
+                    color: "#5f27cd"
+                },
+                {
+                    nama: "Project Kudus",
+                    kota: "Kudus",
+                    lat: -6.8048,
+                    lng: 110.8405,
+                    color: "#1dd1a1"
+                },
+                {
+                    nama: "Project Jepara",
+                    kota: "Jepara",
+                    lat: -6.5933,
+                    lng: 110.6680,
+                    color: "#ff9f43"
+                },
+                {
+                    nama: "Project Pati",
+                    kota: "Pati",
+                    lat: -6.7487,
+                    lng: 111.0379,
+                    color: "#54a0ff"
+                },
+                {
+                    nama: "Project Sukabumi",
+                    kota: "Sukabumi",
+                    lat: -6.9277,
+                    lng: 106.9297,
+                    color: "#ee5253"
+                },
+                {
+                    nama: "Project Cianjur",
+                    kota: "Cianjur",
+                    lat: -6.8173,
+                    lng: 107.1427,
+                    color: "#10ac84"
+                },
+                {
+                    nama: "Project Bekasi",
+                    kota: "Bekasi",
+                    lat: -6.2383,
+                    lng: 106.9756,
+                    color: "#f368e0"
+                },
+                {
+                    nama: "Project Cikarang",
+                    kota: "Cikarang",
+                    lat: -6.2615,
+                    lng: 107.1522,
+                    color: "#00d2d3"
+                },
+                {
+                    nama: "Project Banjarnegara",
+                    kota: "Banjarnegara",
+                    lat: -7.4020,
+                    lng: 109.6810,
+                    color: "#ff9ff3"
+                },
+                {
+                    nama: "Project Temanggung",
+                    kota: "Temanggung",
+                    lat: -7.3167,
+                    lng: 110.1667,
+                    color: "#48dbfb"
+                },
+                {
+                    nama: "Project Wonosobo",
+                    kota: "Wonosobo",
+                    lat: -7.3630,
+                    lng: 109.9000,
+                    color: "#feca57"
+                },
+                {
+                    nama: "Project Kebumen",
+                    kota: "Kebumen",
+                    lat: -7.6689,
+                    lng: 109.6531,
+                    color: "#5f6caf"
+                },
+                {
+                    nama: "Project Probolinggo",
+                    kota: "Probolinggo",
+                    lat: -7.7543,
+                    lng: 113.2159,
+                    color: "#ff7f50"
+                },
+                {
+                    nama: "Project Jember",
+                    kota: "Jember",
+                    lat: -8.1724,
+                    lng: 113.7000,
+                    color: "#6a5acd"
+                },
+                {
+                    nama: "Project Sulawesi",
+                    kota: "Makassar",
+                    lat: -5.1477,
+                    lng: 119.4327,
+                    color: "#20c997"
+                },
+                {
+                    nama: "Project Kediri",
+                    kota: "Kediri",
+                    lat: -7.8480,
+                    lng: 112.0178,
+                    color: "#ff8fab"
+                },
+                {
+                    nama: "Project Madiun",
+                    kota: "Madiun",
+                    lat: -7.6298,
+                    lng: 111.5239,
+                    color: "#2ec4b6"
+                },
+                {
+                    nama: "Project Blitar",
+                    kota: "Blitar",
+                    lat: -8.0955,
+                    lng: 112.1608,
+                    color: "#ffb703"
+                },
+                {
+                    nama: "Project Cirebon",
+                    kota: "Cirebon",
+                    lat: -6.7063,
+                    lng: 108.5570,
+                    color: "#8d99ae"
+                },
+                {
+                    nama: "Project Kediri",
+                    kota: "Kediri",
+                    lat: -7.8480,
+                    lng: 112.0178,
+                    color: "#ff8fab"
+                },
+                {
+                    nama: "Project Madiun",
+                    kota: "Madiun",
+                    lat: -7.6298,
+                    lng: 111.5239,
+                    color: "#2ec4b6"
+                },
+                {
+                    nama: "Project Blitar",
+                    kota: "Blitar",
+                    lat: -8.0955,
+                    lng: 112.1608,
+                    color: "#ffb703"
+                },
+                {
+                    nama: "Project Cirebon",
+                    kota: "Cirebon",
+                    lat: -6.7063,
+                    lng: 108.5570,
+                    color: "#8d99ae"
+                },
+                {
+                    nama: "Project Subang",
+                    kota: "Subang",
+                    lat: -6.5719,
+                    lng: 107.7605,
+                    color: "#8338ec"
+                },
+                {
+                    nama: "Project Purwakarta",
+                    kota: "Purwakarta",
+                    lat: -6.5569,
+                    lng: 107.4438,
+                    color: "#fb5607"
+                },
+                {
+                    nama: "Project Jakarta Barat",
+                    kota: "Jakarta Barat",
+                    lat: -6.1683,
+                    lng: 106.7588,
+                    color: "#e63946"
+                },
+                {
+                    nama: "Project Bogor",
+                    kota: "Bogor",
+                    lat: -6.5950,
+                    lng: 106.8167,
+                    color: "#06d6a0"
+                },
+                {
+                    nama: "Project Karawang",
+                    kota: "Karawang",
+                    lat: -6.3054,
+                    lng: 107.2961,
+                    color: "#3a86ff"
+                },
+                {
+                    nama: "Project Indramayu",
+                    kota: "Indramayu",
+                    lat: -6.3265,
+                    lng: 108.3207,
+                    color: "#ff006e"
+                },
+                {
+                    nama: "Project Indramayu",
+                    kota: "Indramayu",
+                    lat: -6.3265,
+                    lng: 108.3207,
+                    color: "#ff006e"
+                }
                 ];
 
                 // Inisialisasi map
@@ -687,8 +892,6 @@
         </section>
         <!-- map indonesia end -->
 
-
-
         <!-- Team Start -->
         <style>
             .team .row {
@@ -726,7 +929,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/diki34.png" alt="Team Image">
+                                <img src="{{ asset('assets/mcb/img/diki34.png') }}" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2>Dicky Zulfi</h2>
@@ -744,7 +947,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/sandy.png" alt="Team Image">
+                                <img src="{{ asset('assets/mcb/img/sandy.png') }}" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2>Sandy Maulana</h2>
@@ -831,7 +1034,9 @@
                         <p>&copy; <a href="#">PT. MEGANTARA CIPTA BERSAUDARA</a>, All Right Reserved.</p>
                     </div>
                     <div class="col-md-6">
-                        <p>Designed By <a href="https://htmlcodex.com">Mrupy' Group</a></p>
+                        <small>
+                            <p>Designed By <a href="https://htmlcodex.com">Mrupy's Group</a></p>
+                        </small>
                     </div>
                 </div>
             </div>
@@ -841,20 +1046,22 @@
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/slick/slick.min.js"></script>
 
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="{{ asset('assets/mcb/lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/counterup/counterup.min.js') }}"></script>
+
+    <script src="{{ asset('assets/mcb/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/lightbox/js/lightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/mcb/lib/slick/slick.min.js') }}"></script>
+
+    <script src="{{ asset('assets/mcb/js/main.js') }}"></script>
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
     <a href="https://wa.me/6281234567890?text=Halo%20PT%20Megantara%20Cipta%20Bersaudara,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda."
         class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>

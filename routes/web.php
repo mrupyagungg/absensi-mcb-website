@@ -13,16 +13,14 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Livewire;
 
 Route::get('/', function () {
-    // return view('welcome');
-    return redirect('/login');
-});
+    return view('landingpage');
+})->name('landingpage');
 
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/', fn () => Auth::user()->isAdmin ? redirect('/admin') : redirect('/home'));
 
     // USER AREA
     Route::middleware('user')->group(function () {
@@ -42,7 +40,7 @@ Route::middleware([
 
     // ADMIN AREA
     Route::prefix('admin')->middleware('admin')->group(function () {
-        Route::get('/', fn () => redirect('/admin/dashboard'));
+        Route::get('/', fn() => redirect('/admin/dashboard'));
         Route::get('/dashboard', function () {
             return view('admin.dashboard');
         })->name('admin.dashboard');
