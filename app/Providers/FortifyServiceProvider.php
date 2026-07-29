@@ -23,17 +23,17 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        // Redirect setelah login
+        // Redirect setelah login berdasarkan group user
         $this->app->instance(LoginResponse::class, new class implements LoginResponse {
             public function toResponse($request)
             {
-                if (Auth::user()) {
-                    if (Auth::user()->group === 'admin' || Auth::user()->group === 'superadmin') {
-                        return redirect('/admin');
-                    }
+                $user = Auth::user();
+
+                if ($user && ($user->group === 'admin' || $user->group === 'superadmin')) {
+                    return redirect('/admin');
                 }
 
-                return redirect('/');
+                return redirect('/home');
             }
         });
 
@@ -41,7 +41,7 @@ class FortifyServiceProvider extends ServiceProvider
         $this->app->instance(RegisterResponse::class, new class implements RegisterResponse {
             public function toResponse($request)
             {
-                return redirect('/');
+                return redirect('/home');
             }
         });
     }
