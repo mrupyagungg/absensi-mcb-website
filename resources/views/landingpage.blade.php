@@ -99,7 +99,7 @@
                     <a href="index.html" class="navbar-brand" style="padding: 0; display: flex; align-items: center;">
                         <img src="{{ asset('assets/mcb/img/logo/logo-removebg-preview.png') }}" alt="MCB Logo"
                             style="height: 55px; width: auto; object-fit: contain;">
-                    </a> <button type=" button" class="navbar-toggler" data-toggle="collapse"
+                    </a> <button type="button" class="navbar-toggler" data-toggle="collapse"
                         data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -108,8 +108,6 @@
                         <div class="navbar-nav mr-auto">
 
                             <!-- Logo di sebelah Home -->
-
-                            </a>
                             <a href="index.html" class="nav-item nav-link active">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="service.html" class="nav-item nav-link">Service</a>
@@ -1054,7 +1052,9 @@
     <script src="{{ asset('assets/mcb/lib/wow/wow.min.js') }}"></script>
     <script src="{{ asset('assets/mcb/lib/waypoints/waypoints.min.js') }}"></script>
     <script src="{{ asset('assets/mcb/lib/counterup/counterup.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="{{ asset('assets/mcb/lib/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('assets/mcb/lib/isotope/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('assets/mcb/lib/lightbox/js/lightbox.min.js') }}"></script>
