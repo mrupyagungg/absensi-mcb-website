@@ -48,20 +48,25 @@
                                     :active="request()->routeIs('admin.leave-requests')">
                                     {{ __('Leave Request') }}
                                 </x-dropdown-link>
-                                <x-dropdown-link href="{{ route('admin.masters.division') }}" :active="request()->routeIs('admin.masters.division')">
+                                <x-dropdown-link href="{{ route('admin.masters.division') }}"
+                                    :active="request()->routeIs('admin.masters.division')">
                                     {{ __('Division') }}
                                 </x-dropdown-link>
-                                <x-dropdown-link href="{{ route('admin.masters.job-title') }}" :active="request()->routeIs('admin.masters.job-title')">
+                                <x-dropdown-link href="{{ route('admin.masters.job-title') }}"
+                                    :active="request()->routeIs('admin.masters.job-title')">
                                     {{ __('Job Title') }}
                                 </x-dropdown-link>
-                                <x-dropdown-link href="{{ route('admin.masters.education') }}" :active="request()->routeIs('admin.masters.education')">
+                                <x-dropdown-link href="{{ route('admin.masters.education') }}"
+                                    :active="request()->routeIs('admin.masters.education')">
                                     {{ __('Education') }}
                                 </x-dropdown-link>
-                                <x-dropdown-link href="{{ route('admin.masters.shift') }}" :active="request()->routeIs('admin.masters.shift')">
+                                <x-dropdown-link href="{{ route('admin.masters.shift') }}"
+                                    :active="request()->routeIs('admin.masters.shift')">
                                     {{ __('Shift') }}
                                 </x-dropdown-link>
                                 <hr>
-                                <x-dropdown-link href="{{ route('admin.masters.admin') }}" :active="request()->routeIs('admin.masters.admin')">
+                                <x-dropdown-link href="{{ route('admin.masters.admin') }}"
+                                    :active="request()->routeIs('admin.masters.admin')">
                                     {{ __('Admin') }}
                                 </x-dropdown-link>
                             </x-slot>
@@ -72,7 +77,8 @@
                                 <x-heroicon-o-chevron-down class="ms-2 h-5 w-5 text-gray-400" />
                             </x-slot>
                             <x-slot name="content">
-                                <x-dropdown-link href="{{ route('admin.import-export.users') }}" :active="request()->routeIs('admin.import-export.users')">
+                                <x-dropdown-link href="{{ route('admin.import-export.users') }}"
+                                    :active="request()->routeIs('admin.import-export.users')">
                                     {{ __('Employee') }}/{{ __('Admin') }}
                                 </x-dropdown-link>
                                 <x-dropdown-link href="{{ route('admin.import-export.attendances') }}"
@@ -101,8 +107,7 @@
                                     <button
                                         class="flex rounded-full border-2 border-transparent text-sm transition focus:border-gray-300 focus:outline-none">
                                         <img class="h-8 w-8 rounded-full object-cover"
-                                            src="{{ Auth::user()->profile_photo_url }}"
-                                            alt="{{ Auth::user()->name }}" />
+                                            src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
                                     </button>
                                 @else
                                     <span class="inline-flex rounded-md">
@@ -110,9 +115,8 @@
                                             class="inline-flex items-center rounded-md border border-transparent bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:bg-gray-50 focus:outline-none active:bg-gray-50 dark:bg-gray-800 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:bg-gray-700 dark:active:bg-gray-700">
                                             {{ Auth::user()->name }}
 
-                                            <svg class="-me-0.5 ms-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                                                fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                stroke="currentColor">
+                                            <svg class="-me-0.5 ms-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                                             </svg>
@@ -176,40 +180,51 @@
     <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
         <div class="space-y-1 pb-3 pt-2">
             @if (Auth::user()->isAdmin)
-                <x-responsive-nav-link href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
+                <x-responsive-nav-link href="{{ route('admin.dashboard') }}"
+                    :active="request()->routeIs('admin.dashboard')">
                     {{ __('Dashboard') }}
                 </x-responsive-nav-link>
                 <x-responsive-nav-link href="{{ route('admin.barcodes') }}" :active="request()->routeIs('admin.barcodes')">
                     {{ __('Barcode') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('admin.attendances') }}" :active="request()->routeIs('admin.attendances')">
+                <x-responsive-nav-link href="{{ route('admin.attendances') }}"
+                    :active="request()->routeIs('admin.attendances')">
                     {{ __('Attendance') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('admin.employees') }}" :active="request()->routeIs('admin.employees')">
+                <x-responsive-nav-link href="{{ route('admin.employees') }}"
+                    :active="request()->routeIs('admin.employees')">
                     {{ __('Employee') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('admin.leave-requests') }}" :active="request()->routeIs('admin.leave-requests')">
+                <x-responsive-nav-link href="{{ route('admin.leave-requests') }}"
+                    :active="request()->routeIs('admin.leave-requests')">
                     {{ __('Leave Request') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('admin.masters.division') }}" :active="request()->routeIs('admin.masters.division')">
+                <x-responsive-nav-link href="{{ route('admin.masters.division') }}"
+                    :active="request()->routeIs('admin.masters.division')">
                     {{ __('Division') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('admin.masters.job-title') }}" :active="request()->routeIs('admin.masters.job-title')">
+                <x-responsive-nav-link href="{{ route('admin.masters.job-title') }}"
+                    :active="request()->routeIs('admin.masters.job-title')">
                     {{ __('Job Title') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('admin.masters.education') }}" :active="request()->routeIs('admin.masters.education')">
+                <x-responsive-nav-link href="{{ route('admin.masters.education') }}"
+                    :active="request()->routeIs('admin.masters.education')">
                     {{ __('Education') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('admin.masters.shift') }}" :active="request()->routeIs('admin.masters.shift')">
+                <x-responsive-nav-link href="{{ route('admin.masters.shift') }}"
+                    :active="request()->routeIs('admin.masters.shift')">
                     {{ __('Shift') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('admin.masters.admin') }}" :active="request()->routeIs('admin.masters.admin')">
+                <x-responsive-nav-link href="{{ route('admin.masters.admin') }}"
+                    :active="request()->routeIs('admin.masters.admin')">
                     {{ __('Admin Management') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('admin.import-export.users') }}" :active="request()->routeIs('admin.import-export')">
+                <x-responsive-nav-link href="{{ route('admin.import-export.users') }}"
+                    :active="request()->routeIs('admin.import-export')">
                     Import & Export Karyawan/Admin
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('admin.import-export.attendances') }}" :active="request()->routeIs('admin.import-export')">
+                <x-responsive-nav-link href="{{ route('admin.import-export.attendances') }}"
+                    :active="request()->routeIs('admin.import-export')">
                     Import & Export Absensi
                 </x-responsive-nav-link>
             @else
@@ -242,7 +257,8 @@
                 </x-responsive-nav-link>
 
                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                    <x-responsive-nav-link href="{{ route('api-tokens.index') }}" :active="request()->routeIs('api-tokens.index')">
+                    <x-responsive-nav-link href="{{ route('api-tokens.index') }}"
+                        :active="request()->routeIs('api-tokens.index')">
                         {{ __('API Tokens') }}
                     </x-responsive-nav-link>
                 @endif

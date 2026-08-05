@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="top-bar-text">
                                         <h3 style="margin: 0 0 4px; font-size: 18px;">Admin Call</h3>
-                                        <p style="margin: 0; font-size: 14px;">0213889170</p>
+                                        <p style="margin: 0; font-size: 14px;">02138891870</p>
                                     </div>
                                 </div>
                             </div>
@@ -770,8 +770,8 @@
                         <div class="footer-contact">
                             <h2>Office Contact</h2>
                             <p><i class="fa fa-map-marker-alt"></i> Ruko Amara Residence No. A-15</p>
-                            <p><i class="fa fa-phone-alt"></i>0213889170</p>
-                            <p><i class="fa fa-envelope"></i>megantaracipta.b@gmail.com</p>
+                            <p><i class="fa fa-phone-alt"></i>02138891870</p>
+                            <p><i class="fa fa-envelope"></i>megantaraciptabersaudara@gmail.com</p>
                             <!-- <div class="footer-social">
                                 <a href=""><i class="fab fa-twitter"></i></a>
                                 <a href=""><i class="fab fa-facebook-f"></i></a>

@@ -34,7 +34,7 @@
   @endpushOnce
 
   @if (!$isAbsence)
-    <script src="{{ url('/assets/js/html5-qrcode.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.min.js"></script>
   @endif
 
   <div class="flex flex-col gap-4 md:flex-row">
@@ -43,14 +43,15 @@
         <div class="mb-5 flex items-center gap-3">
           <div
             class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-300">
-            <x-heroicon-o-qr-code class="h-7 w-7" />
+            <x-heroicon-o-user class="h-7 w-7" />
           </div>
           <div>
             <h3 class="text-lg font-bold text-gray-800 dark:text-white">
-              Scan Absensi
+              Face Recognition
             </h3>
+
             <p class="text-sm text-gray-500 dark:text-gray-400">
-              Pilih shift dan scan QR lokasi kerja
+              Pilih shift dan arahkan wajah ke kamera
             </p>
           </div>
         </div>
@@ -83,21 +84,17 @@
           class="flex justify-center rounded-2xl border-2 border-dashed border-gray-300 bg-gray-50 p-5 dark:border-slate-600 dark:bg-slate-900"
           wire:ignore>
 
-          <div id="scanner"
-            class="flex h-72 w-72 items-center justify-center overflow-hidden rounded-xl bg-white shadow-inner sm:h-80 sm:w-80">
-
-            <div class="text-center text-gray-400">
-              <x-heroicon-o-camera class="mx-auto mb-3 h-12 w-12" />
-              <p class="text-sm">
-                Kamera Scanner
-              </p>
-              <span class="text-xs">
-                Arahkan kamera ke QR Code
+          <div id="faceScanner"
+            class="relative h-72 w-72 overflow-hidden rounded-xl bg-black shadow-inner sm:h-80 sm:w-80">
+            <video id="faceVideo" autoplay muted playsinline class="h-full w-full object-cover">
+            </video>
+            <div class="absolute bottom-3 left-0 right-0 text-center">
+              <span id="faceStatus" class="rounded-lg bg-black/50 px-3 py-1 text-xs text-white">
+                Memuat kamera...
               </span>
+
             </div>
-
           </div>
-
         </div>
 
 
@@ -113,7 +110,7 @@
     @endif
     <div class="w-full space-y-6">
 
-      <div id="scanner-error"
+      <div id=" scanner-error"
         class="hidden rounded-xl bg-red-50 p-4 text-sm font-medium text-red-600 dark:bg-red-900/30 dark:text-red-400"
         wire:ignore></div>
 
@@ -173,8 +170,8 @@
                 Detail Alamat
               </p>
 
-              <div id="address"
-                class="mt-3 rounded-xl bg-gray-100 p-3 text-sm text-gray-700 dark:bg-slate-700 dark:text-gray-200">
+              <div id="address" class="mt-3 rounded-xl bg-gray-100 p-3 text-sm text-gray-700 dark:bg-slate-700
+                    dark:text-gray-200">
                 Mengambil alamat...
               </div>
             </div>
@@ -211,8 +208,7 @@
               <h3 class="mt-3 text-3xl font-bold">
                 {{ $attendance?->time_out ? Carbon::parse($attendance->time_out)->format('H:i:s') : '-' }}
               </h3>
-            </div>
-            <x-heroicon-o-arrow-up-right class="h-10 w-10" />
+            </div> <x-heroicon-o-arrow-up-right class="h-10 w-10" />
           </div>
         </div>
 
@@ -273,6 +269,8 @@
       </div>
     </div>
   </div>
+
+
   <script>
     function showLocationModal(message) {
       document.getElementById('locationErrorMessage').innerHTML = message;
@@ -492,13 +490,13 @@
 
       @if($attendance?->latitude && $attendance?->longitude)
 
-        const attendanceMap = L.map('map').setView([{{ $attendance->latitude }},{{ $attendance->longitude }}], 15);
+        const attendanceMap = L.map('map').setView([{{ $attendance->latitude }}, {{ $attendance->longitude }}], 15);
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 21
         }).addTo(attendanceMap);
 
-        L.marker([{{ $attendance->latitude }},{{ $attendance->longitude }}]).addTo(attendanceMap);
+        L.marker([{{ $attendance->latitude }}, {{ $attendance->longitude }}]).addTo(attendanceMap);
 
         setTimeout(() => {
           attendanceMap.invalidateSize();

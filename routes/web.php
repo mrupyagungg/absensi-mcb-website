@@ -10,11 +10,28 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserAttendanceController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FaceController;
 use Livewire\Livewire;
 
 Route::get('/', function () {
     return view('landingpage');
 })->name('landingpage');
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile/face', [FaceController::class, 'index'])
+        ->name('profile.face');
+});
+
+
+Route::middleware('auth')->group(function () {
+
+    Route::post(
+        '/profile/face/store',
+        [FaceController::class, 'store']
+    )->name('profile.face.store');
+
+});
 
 Route::middleware([
     'auth:sanctum',

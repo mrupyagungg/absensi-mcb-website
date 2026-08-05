@@ -30,9 +30,6 @@ class User extends Authenticatable
         'nip',
         'name',
         'email',
-        'password',
-        'raw_password',
-        'group',
         'phone',
         'gender',
         'birth_date',
@@ -42,8 +39,10 @@ class User extends Authenticatable
         'education_id',
         'division_id',
         'job_title_id',
-        'profile_photo_path',
-        'device_token',
+        'password',
+        'group',
+        'face_descriptor',
+        'face_photo',
     ];
 
     /**
